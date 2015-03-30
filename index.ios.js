@@ -1,7 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 
 var React = require('react-native');
@@ -53,15 +49,10 @@ var hackerApp = React.createClass({
   },
 
   renderProgramMeta: function(program) {
-    if program
-      var minimum_bounty = program.meta.minimum_bounty;
-    else
-      var minimum_bounty = 'no bounty';
-
     return (
       <Text style={styles.meta}>
         Bug count: {program.meta.bug_count} |
-        Minimum bounty: {minimum_bounty}
+        Minimum bounty: {program.meta.minimum_bounty}
       </Text>
     );
   },
